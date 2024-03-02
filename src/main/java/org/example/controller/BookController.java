@@ -33,4 +33,8 @@ public class BookController {
             ResponseEntity.ok("Deleted"):
             ResponseEntity.notFound().build();
     }
+    @GetMapping("/search/{id}")
+    public Book getBookById(@PathVariable Long id){
+       return bookService.getBookById(id);
+    }
 }
