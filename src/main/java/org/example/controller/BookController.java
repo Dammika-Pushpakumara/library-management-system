@@ -7,6 +7,8 @@ import org.example.service.BookService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/book")
 @RequiredArgsConstructor
@@ -20,7 +22,7 @@ public class BookController {
 
     }
     @GetMapping("/get")
-    public Iterable<BookEntity> getBooks(){
+    public List<BookEntity> getBooks(){
         return bookService.getBooks();
     }
 }
