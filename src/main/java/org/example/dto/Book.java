@@ -8,9 +8,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Book {
-private String isbn;
-private String title;
-private String author;
-private String category;
-private Integer qty;
+    private Long id;
+    private String isbn;
+    private String title;
+    private String author;
+    private String category;
+    private Integer qty;
 }

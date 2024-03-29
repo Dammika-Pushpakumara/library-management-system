@@ -12,4 +12,5 @@ public interface BookService {
     Book getBookById(Long id);
 
 
+    void addList(List<Book> bookList);
 }
